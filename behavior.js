@@ -16,7 +16,7 @@ $( '.icon-wrapper' ).hover(
   }
 );
 
-$( '.icon' ).hover(
+$( '.nav-icon' ).hover(
   function() {
     $( this ).prev().removeClass( 'invisible' );
   }, function() {
@@ -27,4 +27,22 @@ $( '.icon' ).hover(
 
 $( '.dropdown-trigger' ).click(function() {
   $( this ).next().slideToggle(200);
+});
+
+
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+                  $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+                window.location.hash = hash;
+      });
+    }   });
 });
