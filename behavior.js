@@ -8,19 +8,13 @@ $( '.img-frame' ).hover(
   }
 );
 
-$( '.icon-wrapper' ).hover(
+$( '.icon-container' ).hover(
   function() {
-    $( this ).addClass( 'view-menu' );
+    $( '.icon-wrapper' ).addClass( 'view-menu' );
+    $( '.page-wrapper' ).addClass( 'squeeze-menu' );
   }, function () {
-    $( this ).removeClass( 'view-menu' );
-  }
-);
-
-$( '.nav-icon' ).hover(
-  function() {
-    $( this ).prev().removeClass( 'invisible' );
-  }, function() {
-    $( this ).prev().addClass( 'invisible' );
+    $( '.icon-wrapper' ).removeClass( 'view-menu' );
+    $( '.page-wrapper' ).removeClass( 'squeeze-menu' );
   }
 );
 
@@ -40,7 +34,7 @@ $(document).ready(function(){
 
                   $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 400, function(){
 
                 window.location.hash = hash;
       });
