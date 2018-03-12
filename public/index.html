@@ -36,9 +36,15 @@
         <a href="file:///Users/juliantheberge/Documents/lion-designs/index.html#photography">
           <img class = 'icon' src="http://juliantheberge.com/images/portfolio/camera1.svg" />
         </a>
-        <img class = 'icon' src="http://juliantheberge.com/images/portfolio/AboutMeMono1.svg" />
-        <img class = 'icon' src="http://juliantheberge.com/images/portfolio/ContactMono1.svg" />
-        <img class = 'icon' src="http://juliantheberge.com/images/portfolio/ResumeMono1.svg" />
+        <a href="file:///Users/juliantheberge/Documents/lion-designs/index.html#about">
+          <img class = 'icon' src="http://juliantheberge.com/images/portfolio/AboutMeMono1.svg" />
+        </a>
+        <a href="file:///Users/juliantheberge/Documents/lion-designs/index.html#contact">
+          <img class = 'icon' src="http://juliantheberge.com/images/portfolio/ContactMono1.svg" />
+        </a>
+        <a href="file:///Users/juliantheberge/Documents/lion-designs/index.html#resume">
+          <img class = 'icon' src="http://juliantheberge.com/images/portfolio/ResumeMono1.svg" />
+        </a>
       </div>
     </div>
     <div class = 'grid-wrapper'>
@@ -53,13 +59,13 @@
         <p class = ' dropdown-trigger'>
           process
         </p>
-        <div class = "dropdown-text none">
+        <div class = " none dropdown-text">
           <p>
             here is some dummy text that might help shed some light on the process of working on wordpress projects.
           </p>
         </div>
       </div>
-      <div class = 'grid-row'>
+      <div class = 'grid-row none'>
 
         <div class='img-frame'>
           <div class='img-text-over none'>
@@ -104,7 +110,7 @@
         </p>
       </div>
     </div>
-    <div class = 'grid-row'>
+    <div class = 'grid-row none'>
 
       <div class='img-frame'>
         <div class='img-text-over none'>
@@ -279,8 +285,84 @@
   <!-- </div>
   <div class = 'dividing-line'></div> -->
   </div>
-</div>
-  <script src='./behavior.js'></script>
-  </body>
+  <div class = 'grid-wrapper'>
+    <div id = "about" class = 'large-subtitle-wrapper'>
+      <h1>about</h1>
+      <img class = 'icon title-icon' src="http://juliantheberge.com/images/portfolio/AboutMeMono1.svg" />
+    </div>
+    <div class = 'subtitle-wrapper'>
+      <h2 >
+        about / business
+      </h2>
+      <p class = ' dropdown-trigger'>
+        text
+      </p>
+      <div class = "dropdown-text">
+        <p>
+          We work with small businesses and individuals who need support managing their web presence. Projects can be from scratch, full redesigns, periodic maintenance, one-offs or even just some advice about what’s best for your business online. Not everyone needs a state-of-the-art web app, even though the competition may make you feel that way. Good design is about producing the best possible outcome given your constraints. My projects are always fit to purpose and fit to budget.
+        </p>
+      </div>
+    </div>
+    <div class = 'subtitle-wrapper'>
+      <h2 >
+        about / me
+      </h2>
+      <p class = ' dropdown-trigger'>
+        text
+      </p>
+      <div class = "dropdown-text">
+        <p>
+          I like making beautiful things that work. As a trained scientist (biogeochemistry) my skin tingles with deeper understandings of complex systems, but it wasn’t until I started making websites that I was able to marry that with my love for design. Love for design doesn’t simply translate to gorgeous animations and bespoke fonts, on a fundamental level, it means products whose visual organization informs its purpose. Good design increases functionality.
+        </p></br>
+        <p>
+          When I’m not slapping the keyboard, I’m rock climbing, running around in the forest, building things in the woodshop and playing music with my friends. There are never enough hours in the day!
+        </p>
+      </div>
+    </div>
 
+    <!-- </div>
+    <div class = 'dividing-line'></div> -->
+  </div>
+  <div class = 'grid-wrapper'>
+    <div id = "contact" class = 'large-subtitle-wrapper'>
+      <h1>contact</h1>
+      <img class = 'icon title-icon' src="http://juliantheberge.com/images/portfolio/ContactMono1.svg" />
+    </div>
+    <div class = 'subtitle-wrapper'>
+      <form action="/accounts/{{email}}/alarms" method="get">
+        <p class='input-titles'>
+          Return email
+        </p>
+        <input class = 'userFormItem' id = 'email' type='text' placeholder="email">
+        <p id = "emailError" class = 'formErrorReport'></p>
+        <p class='input-titles'>
+          Message Body
+        </p>
+        <input class = 'userFormItem' id = 'message' type = 'text' rows="10" placeholder = 'Start a conversation!'></textarea>
+        <p id = "messageError" class = 'formErrorReport'></p>
+        <button id = "formSubmitter" class="unavailable">send message</button>
+        <!-- <p class = 'button-titles mini'>
+          Will return mail ASAP
+        </p> -->
+      </form>
+    </div>
+    <!-- </div>
+    <div class = 'dividing-line'></div> -->
+  </div>
+  <div class = 'grid-wrapper'>
+    <div id = "resume" class = 'large-subtitle-wrapper'>
+      <h1>resume</h1>
+      <img class = 'icon title-icon' src="http://juliantheberge.com/images/portfolio/ResumeMono1.svg" />
+    </div>
+    <div class = 'subtitle-wrapper'>
+      <a href = 'https://docs.google.com/document/d/1AUN78S59hSzr0LYAtBnut42d9yO0OYWKnGy3_xIXv_Y/edit'>link</a>
+    </div>
+    <!-- </div>
+    <div class = 'dividing-line'></div> -->
+  </div>
+  <dib class = 'footer'></dib>
+</div>
+</div>
+<script src='./behavior.js'></script>
+</body>
 </html>

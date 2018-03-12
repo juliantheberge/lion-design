@@ -4,10 +4,12 @@ $dark-red: #812020;
 $dark-grey: #2b2b2b;
 $light-grey: #ededed;
 $light-shadow: rgba(0, 0, 0, .32);
+$alert-blue:#206281;
 // dimensions
 $width-full: 100vw;
 $width-gutters: $width-full * (1 / 8);
 $width-column: $width-full * (3 / 4);
+$width-col-twothird: $width-full * (1 / 2);
 $width-squeeze: $width-gutters * (1 / 2);
 
 $height-full: 100vh;
@@ -81,7 +83,7 @@ li {
 
 %paragraph-base {
   color: $dark-grey;
-  font-size: 14px;
+  font-size:20px;
   font-style: normal;
 }
 
@@ -280,7 +282,7 @@ li {
 // dropdown
 
 .dropdown-text {
-  width: $width-column;
+  width: $width-col-twothird;
   border-left: 2px solid $dark-red;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -360,4 +362,251 @@ li {
   padding-left: $width-squeeze;
   padding-right: $width-squeeze;
   transition: all 300ms;
+}
+
+
+// FORM STYLES
+
+body {
+  border:0;
+  margin:0;
+}
+
+div {
+  /* border: .5px solid lightgrey; */
+}
+
+h1,h2,h3,h4,h5,h6,p,li,a,button,input,label {
+  font-family:"Roboto", sans-serif;
+}
+
+.mini {
+  font-size:10px;
+}
+
+.small {
+  font-size:12px;
+}
+
+.current-selection {
+  font-size:10px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+.flex {
+  display:flex;
+}
+
+.column {
+ flex-direction:column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.pageWrapper {
+  width:100vw;
+}
+
+.full-page {
+  margin:10%;
+}
+
+.small-margin {
+  margin-bottom:8px;
+}
+
+.med-margin {
+  margin:12px;
+}
+
+.boxBorder {
+  border:1px solid black;
+  border-radius: 5px;
+}
+
+.padding {
+  padding:5px;
+}
+
+button {
+  border:1px solid grey;
+  margin:4px 0 4px 0;
+  border-radius:5px;
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, .1);
+  min-width:20%;
+
+  min-height:20px;
+  align-self:flex-end;
+}
+
+.button-titles {
+  align-self:flex-end;
+  margin:0px;
+  padding:0px;
+  margin-bottom:15px;
+}
+
+button:hover {
+  cursor:pointer;
+}
+
+button:active {
+  transform: translate(1px, 1px);
+}
+
+button:focus {
+  outline:0;
+}
+
+button.yes {
+  background-color:$dark-red;
+  color:white;
+}
+
+button.no {
+  background-color:white;
+}
+
+button.long-fixed {
+  width:200px;
+}
+
+button.unavailable {
+  background-color:white;
+  border-color:$dark-grey;
+  color:grey;
+  box-shadow:none;
+}
+
+button.unavailable:active {
+ transform:translate(0px);
+}
+
+.submit {
+  align-self: flex-end;
+}
+
+form {
+  display: flex;
+  flex-direction:column;
+}
+
+input {
+  margin-top:10px;
+  margin-bottom:20px;
+  border:none;
+  border-bottom:2px solid lightgrey;
+  color:lightgrey;
+  flex-grow:1;
+  margin-bottom:15px;
+}
+
+input.active-input {
+  border-bottom:2px solid $dark-grey;
+  color:$dark-grey;
+}
+
+input:focus {
+  outline:0;
+}
+
+input:placeholder-shown {
+  color:pink;
+}
+
+textarea {
+  border-top:2px solid $light-grey;
+  border-bottom:2px solid $light-grey;
+  border-left:0px;
+  border-right:0px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+textarea.active-input {
+  border-top:2px solid black;
+  border-bottom:2px solid black;
+}
+
+textarea:focus {
+  outline:0;
+}
+
+::placeholder {
+  color:$light-grey;
+}
+
+.noMarginsPadding {
+  padding:0;
+  margin:0;
+}
+
+.preInputMimic {
+  border:none;
+  border-bottom:none;
+  color:black;
+  font-size: 11px;
+}
+
+.inputMimic {
+  border:none;
+  border-bottom:2px solid green;
+  color:green;
+  font-size: 11px;
+}
+
+.formCompletedSuccess {
+  outline:0;
+  border-bottom:2px solid black;
+  color:black;
+}
+
+.formCompletedFailure {
+  outline:0;
+  border-bottom:2px solid $alert-blue;
+  color:$alert-blue;
+}
+
+.formErrorReport {
+  font-size:16px!important;
+  margin:2px 0 0px 0;
+  padding:2px 0 0px 0;
+  color:$alert-blue!important;
+  font-style:normal!important;
+  font-weight:bold!important;
+  margin-bottom:20px;
+}
+
+input:placeholder-shown {
+  color:pink;
+}
+
+::placeholder {
+ color:lightgrey;
+}
+
+.shortField {
+ width:40px;
+}
+
+input {
+  font-size:12px;
+  font-size:12px;
+  // border-radius:2px;
+}
+
+input:focus {
+	outline:0;
+}
+
+.footer {
+  height:200px;
 }
